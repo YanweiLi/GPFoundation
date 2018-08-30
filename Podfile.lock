@@ -1,0 +1,20 @@
+PODS:
+  - GPTuple (1.0.0)
+  - GrapeSequence (1.0.0)
+
+DEPENDENCIES:
+  - GPTuple (~> 1.0.0)
+  - GrapeSequence (~> 1.0.0)
+
+SPEC REPOS:
+  https://github.com/YanweiLi/GPSpecs.git:
+    - GPTuple
+    - GrapeSequence
+
+SPEC CHECKSUMS:
+  GPTuple: eda6a25628609fdca183872650babea14e249260
+  GrapeSequence: 4a7cad2bfa4162ffac3e8cfe1401ec83d158cfc9
+
+PODFILE CHECKSUM: 19bb427aa6d544976aa9dcebe4dd24e532ba0352
+
+COCOAPODS: 1.5.3

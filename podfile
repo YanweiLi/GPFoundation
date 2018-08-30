@@ -1,0 +1,20 @@
+
+# 个人私有源
+source "https://github.com/YanweiLi/GPSpecs.git"
+
+# workspace文件名
+workspace 'GPFoundation.xcworkspace' 
+
+target 'GPFoundation' do
+  platform :ios, '8.0'
+  project './GPFoundation/GPFoundation.xcodeproj'
+
+  pod 'GPTuple'			, '~> 1.0.0'
+  pod 'GrapeSequence' 	, '~>1.0.0'
+end
+
+target 'GPFoundationDemo' do
+  platform :ios, '8.0'
+  project './GPFoundationDemo/GPFoundationDemo.xcodeproj'
+end
+
