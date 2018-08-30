@@ -3,18 +3,27 @@
 source "https://github.com/YanweiLi/GPSpecs.git"
 
 # workspace文件名
-workspace 'GPFoundation.xcworkspace' 
+workspace 'GPFoundation.xcworkspace'
+
+def _dependSDK
+    pod 'GPTuple'            , '~> 1.0.0'
+    pod 'GrapeSequence'     , '~> 1.0.0'
+end
 
 target 'GPFoundation' do
   platform :ios, '8.0'
   project './GPFoundation/GPFoundation.xcodeproj'
+  
+  # 引入依赖库
+  _dependSDK
 
-  pod 'GPTuple'			, '~> 1.0.0'
-  pod 'GrapeSequence' 	, '~>1.0.0'
 end
 
 target 'GPFoundationDemo' do
   platform :ios, '8.0'
   project './GPFoundationDemo/GPFoundationDemo.xcodeproj'
+  
+  # 引入依赖库
+  _dependSDK
 end
 

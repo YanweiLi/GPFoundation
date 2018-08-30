@@ -114,6 +114,7 @@
 				D7B462302137996C00F28E58 /* Headers */,
 				D7B462312137996C00F28E58 /* Resources */,
 				D7B462322137996C00F28E58 /* Headers */,
+				D74AFE7B2137ECC2000E48E7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -184,6 +185,19 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		D74AFE7B2137ECC2000E48E7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\n# 打包脚本\n\"${SRCROOT}/../Script/buildIgnoreWarning.sh\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -325,6 +339,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C246062387197D7F87832B59 /* Pods-GPFoundation.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -338,6 +353,7 @@
 				INFOPLIST_FILE = GPFoundation/Info.plist;
 				INFOPLIST_PATH = "$(FULL_PRODUCT_NAME)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				OTHER_CFLAGS = "$(inherited)";
@@ -354,6 +370,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 007304F779D6C7E01F1721D5 /* Pods-GPFoundation.release.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -367,6 +384,7 @@
 				INFOPLIST_FILE = GPFoundation/Info.plist;
 				INFOPLIST_PATH = "$(FULL_PRODUCT_NAME)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				OTHER_CFLAGS = "$(inherited)";

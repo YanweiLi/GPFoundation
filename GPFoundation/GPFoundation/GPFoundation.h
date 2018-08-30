@@ -8,6 +8,4 @@
 
 #import <Foundation/Foundation.h>
 
-#import <GPTuple/GPTuple.h>
-#import <GrapeSequence/GrapeSequence.h>
 #import <GPFoundation/GPTuple+GPTransfer.h>
