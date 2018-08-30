@@ -10,4 +10,7 @@ s.platform = :ios, "8.0"
 s.ios.deployment_target = "8.0"
 s.vendored_frameworks = '*.framework'
 s.requires_arc = true
+
+s.dependency 'GPTuple'		, '~> 1.0.0'
+s.dependency 'GPSequence'	, '~> 1.0.0'
 end
