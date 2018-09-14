@@ -8,7 +8,7 @@ s.homepage = 'https://github.com/YanweiLi/GPFoundation'
 s.source = { :git => "https://github.com/YanweiLi/GPFoundation.git" , :tag => "feature_#{s.version}"}
 s.platform = :ios, "8.0"
 s.ios.deployment_target = "8.0"
-s.vendored_frameworks = 'GPFramework/*.framework'
+s.vendored_frameworks = 'GPFramework/*.*'
 s.requires_arc = true
 
 s.dependency 'GPTuple'			, '~> 1.1.0'
