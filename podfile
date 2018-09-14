@@ -6,8 +6,8 @@ source "https://github.com/YanweiLi/GPSpecs.git"
 workspace 'GPFoundation.xcworkspace'
 
 def _dependSDK
-    pod 'GPTuple'            , '~> 1.0.0'
-    pod 'GrapeSequence'     , '~> 1.0.0'
+    pod 'GPTuple'               , '~> 1.1.0'
+    pod 'GrapeSequence'         , '~> 1.0.0'
 end
 
 target 'GPFoundation' do

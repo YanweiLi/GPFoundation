@@ -1,0 +1,6 @@
+framework module GPFoundation {
+  umbrella header "GPFoundation.h"
+
+  export *
+  module * { export * }
+}
